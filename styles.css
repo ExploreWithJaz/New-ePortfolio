@@ -491,7 +491,7 @@ div.container_aboutme .progress {
 }
 
 /* for tablet responsiveness */
-@media (max-width : 1280px) and (min-width : 1950px) {
+@media (max-width : 1280px) and (min-width : 950px) {
     div.container .column {
         margin: 0 50px;
     }
