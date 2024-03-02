@@ -522,6 +522,15 @@ div.container_aboutme .progress {
         border-bottom: solid 7px #ff6d18;
     }
 
+    .container_aboutme {
+        margin: 50px 50px;
+    }
+
+    .container_aboutme_box {
+        margin: 0 50px;
+    }
+
+
     .container_aboutme .about-me h2 {
         font-size: 2em;
     }
