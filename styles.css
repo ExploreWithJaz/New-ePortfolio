@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: #2f3292;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px;
+    /* border-bottom: solid 1px black; temporary - dev only! */
+}
+
+nav img {
+    height:auto;
+    width: 100px;
+    margin: 10px;
+}
+
+.nav .active {
+    border-bottom: solid #ff6c17;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: large;
+    border-bottom: solid #494dc1;
+}
+
+li a:hover:not(.active) {
+    background-color: #4043a3;
+    border-bottom: solid #ff6c17;
+}
+
+ /* nav bar styling for mobile*/
+ .dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+
+/* for mobile responsiveness*/
+@media (max-width: 580px) {
+    div.nav {
+        display: none;
+    }
+    div.nav_mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 580px) {
+    div.nav_mobile {
+        display: none;
+    }
+    
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 1280px) {
+    nav {
+        padding: 0px 100px;
+    }
+    nav ul li a {
+        margin-left: 5px;
+    }
+}
+
+/* for desktop responsiveness */
+@media (max-width: 950px) and (min-width: 580px) {
+    nav {
+        padding: 0px;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    nav ul {
+        margin-top: 20px;
+    }
+}
+
+
+/* content */
+div.container {
+    margin: 100px 100px;
+}
+
+div.container .row {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.container .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 150px;
+    color: white;
+    flex-basis: calc(50% - 150px);
+}
+
+div.container .column p {
+    font-size: 1.5em;
+    text-align: left;
+    margin: 20px 0;
+}
+
+div.container .column h2 {
+    font-size: 4em;
+    margin: 10px 0;
+
+}
+
+div.container .column h3 {
+    font-size: 2em;
+    margin: 10px 0;
+
+}
+
+div.container .column img {
+    width: 75%;
+    height: auto;
+    margin: 20px;
+}
+
+div.container button {
+    background-color: #ff6c17;
+    border: none;
+    padding: 20px 30px;
+    margin: 20px 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    float: left;
+    font-size: large;
+}
+
+div.container button:hover {
+    background-color: #dd5e14;
+}
+
+
+.container_aboutme_box {
+    /* background-color: #357499; */
+    min-height: 50vh;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.container_aboutme {
+    margin: 100px 100px;
+    border-radius: 40px;
+}
+
+div.container_aboutme .row {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: baseline;
+}
+
+div.container_aboutme .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 0 50px;
+    color: #C3E3EB;
+    flex-basis: calc(50% - 150px);
+}
+
+div.container_aboutme .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.container_aboutme .skill-item {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+div.container_aboutme .progress-bar {
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.container_aboutme .progress {
+    height: 100%;
+    background-color: #ff6c17;
+    border-radius: 10px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.container_aboutme {
+    /* border: solid; */
+    background-color: #4d4dea;
+}
+
+.container_aboutme .about {
+    font-size: 3em;
+    text-align: center;
+    padding: 100px 0;
+    /* border: solid; */
+    color: white;
+    border-bottom: solid 10px #ff6d18;
+    
+}
+
+.container_aboutme .about-me h2 {
+    font-size: 2.5em;
+    padding: 10px 0;
+}
+
+.container_aboutme .about-me h3 {
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+
+.container_aboutme .skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    padding: 10px 0;
+}
+
+.container_aboutme_box .column .about-me p{
+    font-size: 1.7em;
+    line-height: 1.3;
+    padding: 10px 0;
+    /* border: solid; */
+}
+
+.container_aboutme_box .column .about-me{
+    color: #31348f;
+    text-align: left;
+}
+
+.container_aboutme_box .column .skills {
+    color: #31348f;
+    /* border: solid; */
+}
+
+.container_aboutme .skills-container {
+    font-size: 1.5em;
+}
+
+
+/* for mobile reponsiveness */
+@media (max-width: 580px) {
+    div.container {
+        display: none;
+    }
+
+    section.container_aboutme_box {
+        display: none;
+    }
+
+    div.container_mobile {
+        margin: auto 50px;
+    }
+
+    div.container_mobile .row {
+        text-align: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.container_mobile img {
+        height: auto;
+        width: 300px;
+        margin: 30px;
+    }
+
+    div.container_mobile h2 {
+        font-size: 2.5em;
+        margin: 10px 0;
+    }
+
+    div.container_mobile h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    div.container_mobile p {
+        font-size: 1.3em;
+        text-align: left;
+        margin: 10px 0;
+    }
+
+    div.container_mobile button {
+        background-color: #ff6c17;
+        border: none;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 40px;
+        text-decoration: none;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        display: block;
+        float: left;
+        font-size: small;
+    }
+    
+    div.container_mobile button:hover {
+        background-color: #dd5e14;
+    }
+
+    section.container-mobile_aboutme_box {
+        min-height: 50vh;
+        display: flex;
+        place-items: center;
+        justify-content: center;
+    }
+
+    div.container-mobile_aboutme {
+        background-color: #4d4dea;
+        margin: 50px 50px;
+        border-radius: 40px;
+    }
+
+    div.container-mobile_aboutme .about{
+        font-size: 2.5em;
+        text-align: center;
+        padding: 50px 0;
+        color: white;
+        border-bottom: solid 5px#ff6d18;
+    }
+
+    div.container-mobile_aboutme .row {
+        text-align: center;
+        padding: 50px;
+        background-color: white;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    
+    div.container-mobile_aboutme .row {
+        /*display: grid;*/
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .container-mobile_aboutme .about-me h2 {
+        font-size: 2.3em;
+        padding: 10px 0;
+    }
+
+    .container-mobile_aboutme .about-me h3 {
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+
+    .container-mobile_aboutme .about-me p {
+        font-size: 1.3em;
+        line-height: 1.3;
+        padding: 10px 0;
+    }
+
+    div.container-mobile_aboutme .skills-container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        width: 100%;
+        margin: 30px 0;
+    }
+    
+    div.container-mobile_aboutme .skill-item {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    div.container-mobile_aboutme .progress-bar {
+        height: 20px;
+        background-color: #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    div.container-mobile_aboutme .progress {
+        height: 100%;
+        background-color: #ff6c17;
+        border-radius: 10px;
+        width: 0;
+        transition: width 0.5s ease-in-out;
+    }
+}
+
+@media (min-width: 580px) {
+    div.container_mobile {
+        display: none;
+    }
+
+    section.container-mobile_aboutme_box {
+        display: none;
+    }
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 1280px) {
+    div.container .column {
+        margin: 0 50px;
+    }
+
+    div.container .column h2{
+        font-size: 3em;
+        margin: 5px 0;
+    }
+
+    div.container .column h3 {
+        margin: 5px 0;
+    }
+
+    div.container .column p {
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+
+    div.container button {
+        padding: 15px 25px;
+        margin: 10px 0;
+        font-size: small;
+    }
+
+    .container_aboutme .about {
+        font-size: 2.5em;
+        padding: 70px;
+        border-bottom: solid 7px #ff6d18;
+    }
+
+    .container_aboutme .about-me h2 {
+        font-size: 2em;
+    }
+
+    .container_aboutme .about-me h3 {
+        font-size: 1.5em;
+    }
+
+    .container_aboutme_box .column .about-me p {
+        font-size: 1.3em;
+        line-height: 1.2;
+    }
+
+    .container_aboutme .skills h2 {
+        font-size: 2em;
+    }
+
+    div.container_aboutme .skill-item {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    div.container_aboutme .skill-item h3 {
+        font-size: large;
+    }
+
+}
+
+/* for desktop responsiveness */
+@media screen and (max-width: 950px) and (min-width: 580px) {
+    .row {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }   
+
+    .column {
+        margin: 0;
+        margin-top: 20px;
+        align-items: center;
+}
+}

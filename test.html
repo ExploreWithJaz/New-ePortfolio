@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navbar with Hamburger Menu</title>
+<style>
+  /* Basic CSS for navbar */
+  nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav img {
+    height: 40px;
+    width: auto;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 15px;
+  }
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none; /* Hide regular menu */
+    }
+    .menu-toggle {
+      display: block; /* Show menu toggle button */
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <!-- Image on the left -->
+  <img src="your-logo.png" alt="Logo">
+
+  <!-- Menu on the far right -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger menu toggle button -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>
+
+<script>
+  function toggleMenu() {
+    var navUl = document.querySelector('nav ul');
+    navUl.style.display = navUl.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
+
+</body>
+</html>
