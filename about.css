@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: #2f3292;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px;
+    margin: 0 auto;
+    /* border-bottom: solid 1px black; temporary - dev only! */
+}
+
+nav img {
+    height:auto;
+    width: 100px;
+    margin: 10px;
+}
+
+.nav .active {
+    border-bottom: solid #ff6c17;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 10px;
+    font-size: large;
+    border-bottom: solid #494dc1;
+}
+
+li a:hover:not(.active) {
+    background-color: #4043a3;
+    border-bottom: solid #ff6c17;
+}
+
+ /* nav bar styling for mobile*/
+ .openbtn {
+    padding: 5px 10px;
+    font-size: 2.3em;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+ }
+
+ .openbtn:hover {
+    background-color: #4043a3;
+ }
+
+ .nav_mobile .active {
+    border-bottom: solid 3px #ff6c17;
+ }
+
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #373996;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -10px 0px 10px rgb(36, 38, 110, 0.7);
+  }
+  
+  .sidenav a {
+    padding: 10px 22px;
+    margin: 30px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: white;
+    display: table;
+    transition: 0.3s;
+    border-bottom: solid 3px #494dc1;
+  }
+
+  .sidenav .closebtn {
+    border: none;
+  }
+  
+  .sidenav a:hover {
+    border-bottom: solid #ff6c17;
+    background-color: #4043a3;
+  }
+
+  .sidenav .closebtn:hover {
+    border: none;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+
+/* for mobile responsiveness*/
+@media (max-width: 580px) {
+    div.nav {
+        display: none;
+    }
+    div.nav_mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        padding: 0px 20px;
+    }
+}
+
+@media (min-width: 580px) {
+    div.nav_mobile {
+        display: none;
+    }
+    
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 950px) {
+    nav {
+        padding: 0px 100px;
+    }
+    nav ul li a {
+        margin-left: 5px;
+    }
+}
+
+/* for desktop responsiveness */
+@media (max-width: 950px) and (min-width: 580px) {
+    nav {
+        padding: 0px;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    nav ul {
+        margin-top: 20px;
+    }
+}
