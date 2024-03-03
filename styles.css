@@ -86,17 +86,18 @@ li a:hover:not(.active) {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #292c7e;
+    background-color: #2d2f85;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: -10px 0px 10px rgb(36, 38, 110, 0.7);
   }
   
   .sidenav a {
     padding: 10px 22px;
-    margin: 20px 20px;
+    margin: 30px 20px;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: white;
     display: table;
     transition: 0.3s;
@@ -232,7 +233,6 @@ div.container button {
 div.container button:hover {
     background-color: #dd5e14;
 }
-
 
 .container_aboutme_box {
     /* background-color: #357499; */
