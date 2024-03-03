@@ -101,7 +101,7 @@ li a:hover:not(.active) {
     color: white;
     display: table;
     transition: 0.3s;
-    border-bottom: solid #494dc1;
+    border-bottom: solid 3px #494dc1;
   }
 
   .sidenav .closebtn {
