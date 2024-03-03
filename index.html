@@ -33,13 +33,14 @@
                  <!-- Image on the left -->
                  <img src="asset/logo_blue.png" alt="Logo">              
                 <!-- Menu on the far right -->
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#home">Home</a>
-                      <a href="#about">About</a>
-                      <a href="#contact">Contact</a>
-                    </div>
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a class="active" href="index.html">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Projects</a>
+                  <a href="#">Certification</a>
+                  <a href="#">Contact</a>
                 </div>
             </nav>
         </div>        
@@ -177,29 +178,13 @@
 
 
     <script>
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            var dropdownContent = document.getElementById("myDropdown");
-            if (dropdownContent.style.display === "none") {
-                dropdownContent.style.display = "block";
-            } else {
-                dropdownContent.style.display = "none";
-            }
-            }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
+        // When the user clicks on the button,
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
         }
     </script>
 </body>

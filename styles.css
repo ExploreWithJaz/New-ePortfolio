@@ -62,43 +62,68 @@ li a:hover:not(.active) {
 }
 
  /* nav bar styling for mobile*/
- .dropbtn {
-    background-color: #3498DB;
+ .openbtn {
+    padding: 5px 10px;
+    font-size: 2.3em;
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+ }
+
+ .openbtn:hover {
+    background-color: #4043a3;
+ }
+
+ .nav_mobile .active {
+    border-bottom: solid #ff6c17;
+ }
+
+ .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #292c7e;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
   }
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
+  .sidenav a {
+    padding: 10px 22px;
+    margin: 20px 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    display: table;
+    transition: 0.3s;
+    border-bottom: solid #494dc1;
   }
+
+  .sidenav .closebtn {
+    border: none;
+  }
+  
+  .sidenav a:hover {
+    border-bottom: solid #ff6c17;
+    background-color: #4043a3;
+  }
+
+  .sidenav .closebtn:hover {
+    border: none;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
 
 
 /* for mobile responsiveness*/
