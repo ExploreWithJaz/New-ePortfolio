@@ -14,6 +14,28 @@ body {
     background-color: #2f3292;
 }
 
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #23266d; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #5055f7; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b41f7;
+  }
+
+/* nav bar for pc and laptop screen*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,7 +79,7 @@ nav ul li a {
     border-bottom: solid #494dc1;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
     background-color: #4043a3;
     border-bottom: solid #ff6c17;
 }
@@ -801,5 +823,3 @@ div.container_aboutme .progress {
         margin: 40px 0;
     }
 }
-
-/* for desktop responsiveness */

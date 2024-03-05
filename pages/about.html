@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Jazper Garcia Portfolio</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <script type="text/javascript" src="/js/nav-button.js"></script>
+    <link rel="icon" href="asset/logo_blue.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- nav bar for pc and tablet -->
+    <div class="nav">
+        <div class="nav-container">
+            <nav>
+                <!-- Image on the left -->
+                <img src="/asset/logo_blue.png" alt="Logo">
+              
+                <!-- Menu on the far right -->
+                <ul>
+                  <li><a href="/index.html">Home</a></li>
+                  <li><a class="active" href="about.html">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="certification.html">Certification</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>        
+    </div>
+
+    <!-- nav bar for mobile -->
+    <div class="nav_mobile">
+        <div class="nav-container">
+            <nav>
+                 <!-- Image on the left -->
+                 <img src="/asset/logo_blue.png" alt="Logo">              
+                <!-- Menu on the far right -->
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="/index.html">Home</a>
+                  <a class="active" href="about.html">About</a>
+                  <a href="projects.html">Projects</a>
+                  <a href="certification.html">Certification</a>
+                  <a href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </div>        
+    </div>
+
+    <!-- main for pc and tablet -->
+    <div class="placeholder"></div>
+    
+</body>
+
+<footer>
+    <div class="container-footer">
+      <div class="container-footer_box">
+        <div class="row">
+          <div class="left">
+            <ul>
+              <li><a href="https://www.facebook.com/ohmnom8" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+              <li><a href="https://www.twitter.com/Ohmnom_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/jazper-garcia-b436b7167/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/ohmnomnom_" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.github.com/ExploreWithJaz" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="certification.html">Certification</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      </div>
+  
+      <hr class="footer-line">
+  
+      <div class="copyright">
+        <p>&copy; 2023 Jazper Garcia. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</html>
