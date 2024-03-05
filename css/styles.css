@@ -760,6 +760,7 @@ div.container_aboutme .progress {
 
     .container-footer .left {
         padding: 15px 10px;
+        justify-content: center;
     }
 
     .container-footer .left ul li i{
