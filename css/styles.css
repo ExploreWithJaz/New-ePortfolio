@@ -364,7 +364,7 @@ div.container_aboutme .progress {
     }
 
     div.container_mobile {
-        margin: auto 50px;
+        margin: auto 30px;
     }
 
     div.container_mobile .row {
@@ -702,7 +702,7 @@ div.container_aboutme .progress {
     color: white;
     font-size: 1.2em;
     text-decoration: none;
-    border-bottom: solid 3px #ff6c17; /*dev only*/
+    border-bottom: solid 3px #ff6c17;
 }
 
 .container-footer .footer-line {
@@ -748,11 +748,57 @@ div.container_aboutme .progress {
         padding: 10px 30px;
         font-size: small;
     }
+
+    .container-footer {
+        margin: auto 10px;
+    }
+
+    .container-footer .row {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .container-footer .left {
+        padding: 15px 10px;
+    }
+
+    .container-footer .left ul li i{
+        font-size: 1em;
+    }
+
+
+    .container-footer .right {
+        display: none;
+    }
+
+    .container-footer .footer-line {
+        margin: 0 30px;
+    }
+
+    .container-footer .copyright {
+        margin: 20px 30px;
+    }
+
+    .container-footer_box .copyright p {
+        font-size: x-small;
+    }
+
+
 }
 
 /* for tablet responsiveness */
 @media (max-width : 1280px) and (min-width : 580px) {
+    .container-footer .left {
+        justify-content: center;
+    }
 
+    .container-footer .footer-line {
+        margin: 0;
+    }
+
+    .container-footer .copyright {
+        margin: 40px 0;
+    }
 }
 
 /* for desktop responsiveness */
