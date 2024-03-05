@@ -205,7 +205,7 @@ nav li a:hover:not(.active) {
     align-items: center;
     border: solid #68dff9 3px;
     border-radius: 20px;
-    padding: 50px 100px;
+    padding: 50px 80px;
     background-color: #3943c3;
 }
 
@@ -256,6 +256,19 @@ button-container {
     justify-content: flex-end;
 }
 
+.contact-footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.contact-footer p{
+    margin: 30px 20px 0px 20px;
+}
+
+.contact-footer i{
+    margin-right: 10px;
+}
 
 /* footer */
 .container-footer {
