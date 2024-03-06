@@ -303,8 +303,13 @@ div.container_aboutme .skills-container {
 }
 
 div.container_aboutme .skill-item {
-    width: 48%;
+    width: 100%;
     margin-bottom: 20px;
+}
+
+div.container_aboutme .skill-item {
+    text-align: left;
+    margin: 10px 0;
 }
 
 div.container_aboutme .progress-bar {
