@@ -213,11 +213,20 @@ div.container-project-box .card {
     padding: 30px;
     margin: 0 20px;
     background-color: #3943c3;
+    transition: transform 0.3s ease-in-out; /* Add transition property */
+}
+
+div.container-project-box .card:hover {
+    background-color: #ff6c17;
+    border: solid 3px #fcd238;
+    transform: scale(1.05);
+    box-shadow: 0px 7px #fcd137;
 }
 
 div.container-project-box .card img{
     width: 100%;
-    margin: 20px 0;
+    height: 187px;
+    margin: 10px 0;
 }
 
 div.container-project-box .card .container-card{
@@ -225,8 +234,8 @@ div.container-project-box .card .container-card{
 }
 
 div.container-project-box .card .container-card h4{
-    margin: 20px 0;
-    font-size: 2em;
+    margin: 10px 0;
+    font-size: 1.5em;
     font-weight: 800;
     color: white;
 }
@@ -248,11 +257,67 @@ div.container-project-box .card .card-button a{
     text-decoration: none;
     color: white;
     font-weight: bold;
-    border-bottom: solid 3px;
+    border-bottom: solid 3px #4a53d7;
     padding: 10px 0;
 }
 
+div.container-project-box .card:hover .card-button a {
+    border-bottom: solid 3px #fcc333;
+  }
 
+div.container-project-box .card .card-button button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+/* popup window overlay for website */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.3s ease; /* Fading transition */
+  }
+  
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    overflow: hidden;
+    opacity: 0; /* Initial opacity */
+    transition: opacity 0.3s ease; /* Fading transition */
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
 
 /* footer */
 .container-footer {
@@ -323,37 +388,9 @@ div.container-project-box .card .card-button a{
     color: #4b4ec4;
 }
 
+  
 /* for mobile reponsiveness */
 @media (max-width: 580px) {
-    .tagline_box img {
-        height: 100px;
-    }
-
-    .tagline_box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .box {
-        margin: 15px 30px;
-    }
-
-    .tagline_box h2 {
-        font-size: 1.5em;
-    }
-
-    .container_tagline {
-        height: 30%;
-    }
-    
-    .tagline_box button {
-        margin: 20px 0;
-        padding: 10px 30px;
-        font-size: small;
-    }
-
     .container-footer {
         margin: auto 10px;
     }
