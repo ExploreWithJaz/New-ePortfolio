@@ -298,7 +298,7 @@ div.container-project-box .card .card-button button{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 35px;
     overflow: hidden;
     opacity: 0; /* Initial opacity */
     transition: opacity 0.3s ease; /* Fading transition */
