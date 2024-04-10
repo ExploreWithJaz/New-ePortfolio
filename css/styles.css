@@ -14,6 +14,7 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: light;
     background-color: #2f3292;
+    position: relative;
 }
 
 /* SCROLLBAR */
@@ -195,10 +196,18 @@ nav li a:hover:not(.active) {
     }
 }
 
+/* background image */
+div.background-body {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+}
+
 
 /* content */
 div.container {
     margin: 100px 100px;
+    z-index: 1;
 }
 
 div.container .row {
@@ -211,20 +220,22 @@ div.container .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    margin: 0 150px;
+    align-items: center;
     color: white;
     flex-basis: calc(50% - 150px);
 }
 
 div.container .column p {
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-align: left;
     margin: 20px 0;
+    width: 70%;
+    line-height: 37px;
+    font-weight: 600;
 }
 
 div.container .column h2 {
-    font-size: 4em;
+    font-size: 6em;
     margin: 10px 0;
 
 }
@@ -236,9 +247,11 @@ div.container .column h3 {
 }
 
 div.container .column img {
-    width: 75%;
+    width: 80%;
     height: auto;
-    margin: 20px;
+    margin: auto;
+    position: relative;
+    bottom: -40px;
 }
 
 div.container button {
