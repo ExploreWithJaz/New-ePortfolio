@@ -38,7 +38,25 @@ closeBtnPet.addEventListener('click', function() {
   }, 300); // Same duration as CSS transition
 });
 
+const openBtnAdopt = document.getElementById('open-btn-adoptopia');
+const overlayAdopt = document.getElementById('overlay-adoptopia');
+const closeBtnAdopt = document.getElementById('close-btn-adoptopia');
 
+openBtnAdopt.addEventListener('click', function() {
+  overlayAdopt.style.display = 'block'; 
+  setTimeout(() => {
+    overlayAdopt.style.opacity = '1'; 
+    document.getElementById('popup-adoptopia').style.opacity = '1'; 
+  }, 50); // Delay added for smoother transition
+});
+
+closeBtnAdopt.addEventListener('click', function() {
+  overlayAdopt.style.opacity = '0';
+  document.getElementById('popup-adoptopia').style.opacity = '0'; 
+  setTimeout(() => {
+    overlayAdopt.style.display = 'none'; 
+  }, 300); // Same duration as CSS transition
+});
 
 
 
