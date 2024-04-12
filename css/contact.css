@@ -193,6 +193,13 @@ nav li a:hover:not(.active) {
     }
 }
 
+/* background image */
+div.background-body-2 {
+    position: absolute;
+    z-index: -999;
+    top: 50px;
+}
+
 /* main */
 .container-form {
     display: flex;

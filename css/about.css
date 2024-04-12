@@ -193,6 +193,13 @@ nav li a:hover:not(.active) {
     }
 }
 
+/* background image */
+div.background-body-2 {
+    position: absolute;
+    z-index: -999;
+    top: 50px;
+}
+
 /* main */
 .container {
     margin: 0 100px;
@@ -219,7 +226,8 @@ nav li a:hover:not(.active) {
     padding: 50px 50px;
     border: solid #55edff 3px;
     border-radius: 20px;
-    width: 70%;    
+    width: 70%;   
+    background-color: #3943c3; 
 }
 
 .container_box .about-me p{
