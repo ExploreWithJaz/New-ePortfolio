@@ -203,6 +203,12 @@ div.background-body {
     top: 0;
 }
 
+div.background-body-2 {
+    position: absolute;
+    z-index: -999;
+    top: 110vh;
+}
+
 
 /* content */
 div.container {
@@ -273,10 +279,17 @@ div.container button:hover {
     cursor: pointer;
 }
 
+div.about-me-image {
+    margin: 500px 100px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container_aboutme_box {
     /* background-color: #357499; */
     min-height: 50vh;
-    display: flex;
+    display: none;
     place-items: center;
     justify-content: center;
     margin: 0 100px;
@@ -398,6 +411,9 @@ div.container_aboutme .progress {
 /* for mobile reponsiveness */
 @media (max-width: 580px) {
     div.container {
+        display: none;
+    }
+    div.about-me-image {
         display: none;
     }
 
@@ -562,8 +578,16 @@ div.container_aboutme .progress {
 
 /* for tablet responsiveness */
 @media (max-width : 1280px) and (min-width : 580px) {
+    div.container {
+        margin: 30px 0px;
+    }
+
     div.container .column {
-        margin: 0 50px;
+        margin: 0px;
+    }
+
+    div.container .column img {
+        width: 70%;
     }
 
     div.container .column h2{
@@ -576,7 +600,7 @@ div.container_aboutme .progress {
     }
 
     div.container .column p {
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin: 10px 0;
     }
 
@@ -584,6 +608,14 @@ div.container_aboutme .progress {
         padding: 15px 25px;
         margin: 10px 0;
         font-size: small;
+    }
+
+    div.about-me-image {
+        margin-top: 200px;
+    }
+
+    div.about-me-image img {
+        width: 90%;
     }
 
     .container_aboutme .about {
@@ -642,6 +674,8 @@ div.container_aboutme .progress {
         margin-top: 20px;
         align-items: center;
     }
+
+    
 }
 
 .container_tagline {

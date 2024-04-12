@@ -209,7 +209,8 @@ div.container-project-box {
 div.container-project-box .card {
     border: solid 3px #68dff9;
     border-radius: 15px;
-    width: 25%;
+    width: 400px;
+    height: 570px;
     padding: 30px;
     margin: 0 20px;
     background-color: #3943c3;
