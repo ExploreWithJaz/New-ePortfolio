@@ -192,8 +192,78 @@ nav li a:hover:not(.active) {
     }
 }
 
-/* main */
+/* background image */
+div.background-body-2 {
+    position: fixed;
+    z-index: -999;
+    top: 50px;
+}
 
+/* main */
+div.container-certification {
+    margin: 100px 100px;
+}
+
+div.container-certification {
+    padding: 0 100px;
+}
+
+div.container-certification h1 {
+    color: white;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 50px 0;
+    text-align: center;
+}
+
+div.container-certification .underline{
+    border-bottom: solid 4px #4d55d9;
+}
+
+div.container-certification-box h2{
+    color: white;
+    margin-left: 5%;
+}
+
+div.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    align-content: center;
+}
+
+div.card {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+div.card .card-img {
+    border: solid 3px #ff6c17;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+}
+
+div.card .card-img img {
+    width: auto;
+    height: 150px;
+
+}
+
+div.card .card-title {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+div.card .card-title {
+    line-height: 25px;
+}
 
 
 /* footer */

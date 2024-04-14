@@ -196,7 +196,7 @@ nav li a:hover:not(.active) {
 
 /* background image */
 div.background-body-2 {
-    position: absolute;
+    position: fixed;
     z-index: -999;
     top: 50px;
 }
