@@ -29,6 +29,7 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #5055f7; 
+    border-radius: 5px;
   }
   
   /* Handle on hover */
@@ -195,7 +196,7 @@ nav li a:hover:not(.active) {
 
 /* background image */
 div.background-body-2 {
-    position: absolute;
+    position: fixed;
     z-index: -999;
     top: 50px;
 }
@@ -210,7 +211,7 @@ div.background-body-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    margin: 0 100px;
     align-content: center;
     padding: 50px;
 }
@@ -245,6 +246,83 @@ div.background-body-2 {
 .container_box .underline{
     border-bottom: solid 4px #4d55d9;
 }
+
+div.testimonial-container {
+    margin: 0px 100px;
+}
+
+div.testimonial-container-box {
+    margin: 0px 50px 100px;
+    padding: 50px 0;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/* Style the scrollbar track */
+div.testimonial-container-box::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+    height: 10px; /* Adjust the height of the scrollbar */
+    width: 10%;
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+div.testimonial-container-box::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+div.testimonial-container-box .title-testi {
+    color: white;
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+div.testimonial-container-box .underline {
+    border-bottom: solid 4px #4d55d9;
+}
+
+div.card-container {
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+div.card {
+    position: relative;
+    height: 250px;
+    width: 400px;
+    padding: 20px;
+    border: solid #55edff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #3943c3;
+}
+
+div.card img {
+    width: 120px;
+    position: absolute;
+    top: -60px;
+    border-radius: 100px;
+    border: solid #55edff;
+}
+
+div.card h1 {
+    margin: 10px 0;
+    color: white;
+}
+
+div.card p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
 
 
 /* footer */

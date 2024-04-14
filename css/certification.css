@@ -27,6 +27,7 @@ body {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #5055f7; 
+    border-radius: 5px;
   }
   
   /* Handle on hover */
@@ -192,9 +193,6 @@ nav li a:hover:not(.active) {
 }
 
 /* main */
-div.placeholder {
-    height: 70vh;
-}
 
 
 
