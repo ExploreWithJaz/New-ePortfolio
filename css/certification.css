@@ -246,14 +246,38 @@ div.card .card-img {
     display: flex;
     justify-content: center;
     background-color: white;
+}
 
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 800px;
+    height: 80%;
+    max-height: 600px;
+    background-color: #3943c3;
+    border: solid 3px #68dff9;
+    border-radius: 20px;
+    box-shadow: -10px 10px 40px 0px;
+    overflow: auto;
+    padding: 30px;
+}
+
+div.card .popup img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 div.card .card-img img {
     width: auto;
     height: 150px;
-
 }
+
+
 
 div.card .card-title {
     text-align: center;

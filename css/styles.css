@@ -748,12 +748,17 @@ div.card img {
     border: solid #55edff;
 }
 
-div.card h1 {
-    margin: 10px 0;
-    color: white;
+div.card .card-content {
+    margin-top: 40px;
 }
 
-div.card p {
+div.card .card-content h1 {
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+div.card .card-content p {
     color: white;
     font-size: 15px;
     text-align: center;
