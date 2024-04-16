@@ -213,8 +213,7 @@ div.background-body-2 {
 
 /* content */
 div.container {
-    margin: 100px 100px;
-    z-index: 1;
+    margin: 70px 100px;
 }
 
 div.container .row {
@@ -254,7 +253,7 @@ div.container .column h3 {
 }
 
 div.container .column img {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: auto;
     position: relative;
