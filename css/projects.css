@@ -224,6 +224,7 @@ div.container-project-box .card {
     background-color: #3943c3;
     transition: transform 0.3s ease-in-out; /* Add transition property */
     position: relative;
+    box-shadow: -5px 5px 20px 0px;
 }
 
 div.container-project-box .card:hover {

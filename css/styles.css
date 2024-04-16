@@ -726,9 +726,9 @@ div.card-container {
 
 div.card {
     position: relative;
-    height: 250px;
+    height: 300px;
     width: 400px;
-    padding: 20px;
+    padding: 40px 20px 20px;
     border: solid #55edff;
     display: flex;
     flex-direction: column;
@@ -748,7 +748,9 @@ div.card img {
 }
 
 div.card .card-content {
-    margin-top: 40px;
+    position: absolute;
+    top: 60px;
+    padding: 0 20px;
 }
 
 div.card .card-content h1 {
