@@ -891,7 +891,7 @@ div.card .card-content p {
     }
     div.testimonial-container .title-testi {
         padding-bottom: 50px;
-        font-size: 3em;
+        font-size: 2.8em;
     }
 
     div.testimonial-container-box {
@@ -925,6 +925,24 @@ div.card .card-content p {
         margin: 20px 0;
         padding: 10px 30px;
         font-size: small;
+    }
+
+    div.card {
+        height: 250px;
+        width: 370px;
+    }
+
+    div.card img {
+        width: 100px;
+        top: -55px;
+    }
+
+    div.card .card-content h1 {
+        font-size: 1.5em;
+    }
+
+    div.card .card-content p {
+        font-size: 0.8em;
     }
 
     .container-footer {
