@@ -278,7 +278,6 @@ div.card .card-img img {
 }
 
 
-
 div.card .card-title {
     text-align: center;
     color: white;
@@ -287,6 +286,100 @@ div.card .card-title {
 
 div.card .card-title {
     line-height: 25px;
+}
+
+/* mobile view of certificates */
+div.mobile-container-certification {
+    margin: 30px;
+}
+
+div.mobile-container-certification h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 50px 0;
+    text-align: center;
+}
+
+div.mobile-container-certification .underline{
+    border-bottom: solid 4px #4d55d9;
+}
+
+div.mobile-container-certification-box h2{
+    color: white;
+}
+
+div.mobile-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    align-content: center;
+}
+
+div.mobile-card {
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+}
+
+div.mobile-card .mobile-card-img {
+    border: solid 3px #ff6c17;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+div.mobile-card .mobile-card-img img {
+    width: auto;
+    height: 240px;
+}
+
+div.mobile-card .mobile-card-title {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+div.mobile-card .mobile-card-title {
+    line-height: 25px;
+}
+
+/* for mobile responsiveness*/
+@media (max-width: 580px) {
+    div.container-certification{
+        display: none;
+    }
+}
+
+@media (min-width: 580px) {
+    div.mobile-container-certification {
+        display: none;}
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 950px) {
+    div.container-certification {
+        margin: 0;
+    }
+
+    div.container-certification {
+        margin: 50px 0;
+    }
+}
+
+/* for desktop responsiveness */
+@media (max-width: 950px) and (min-width: 580px) {
+    div.container-certification {
+        margin: 50px;
+        padding: 0;
+    }
+
+    .popup {
+        width: 100%;
+    }
 }
 
 
