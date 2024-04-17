@@ -249,11 +249,11 @@ div.background-body-2 {
 
 @media (max-width: 580px) {
     .container {
-        margin: 0;
+        margin: 0 30px;
     }
 
     .container_box {
-        margin: 50px 0;
+        margin: 20px 0;
         padding: 0;
     }
 
@@ -263,6 +263,7 @@ div.background-body-2 {
 
     .container_box .about-me {
         padding: 20px;
+        width: 100%;
     }
 
     .container_box .about-me p {
