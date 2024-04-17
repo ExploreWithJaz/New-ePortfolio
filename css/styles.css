@@ -886,6 +886,18 @@ div.card .card-content p {
 
 /* for mobile reponsiveness */
 @media (max-width: 580px) {
+    div.testimonial-container {
+        margin: 0;
+    }
+    div.testimonial-container .title-testi {
+        padding-bottom: 50px;
+        font-size: 3em;
+    }
+
+    div.testimonial-container-box {
+        margin: 0px 20px 100px;
+    }
+
     .tagline_box img {
         height: 100px;
     }

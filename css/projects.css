@@ -299,7 +299,7 @@ div.container-project-box .card .card-button button{
     z-index: 1000;
     opacity: 0; /* Initial opacity */
     transition: opacity 0.3s ease; /* Fading transition */
-  }
+}
   
   .popup {
     position: absolute;
@@ -315,7 +315,7 @@ div.container-project-box .card .card-button button{
     overflow: hidden;
     opacity: 0; /* Initial opacity */
     transition: opacity 0.3s ease; /* Fading transition */
-  }
+}
   
   .close-btn {
     position: absolute;
@@ -323,14 +323,45 @@ div.container-project-box .card .card-button button{
     right: 10px;
     cursor: pointer;
     font-size: 2em;
-  }
+}
   
   iframe {
     width: 100%;
     height: 100%;
     border: none;
-  }
-  
+}
+
+/* for mobile responsiveness*/
+@media (max-width: 580px) {
+    div.container-project {
+        margin: 50px 20px;
+    }
+
+    div.container-project-box {
+        padding: 0;
+    }
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 950px) {
+    div.container-project {
+        margin: 50px;
+    }
+
+    div.container-project-box {
+        padding: 0;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 580px) {
+    div.container-project {
+        margin: 50px;
+    }
+
+    div.container-project-box {
+        padding: 0;
+    }
+}
 
 /* footer */
 .container-footer {

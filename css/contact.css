@@ -280,6 +280,82 @@ button-container {
     margin-right: 10px;
 }
 
+@media (max-width: 580px) {
+    .container-form {
+        margin: 30px;
+    }
+
+    .container-form_box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .container-form_box .header-form h1 {
+        font-size: 2.5em;
+    }
+
+    .container-form_box .header-form p {
+        font-size: 1.1em;
+    }
+
+    .container-form_box .form {
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+    }
+
+    .contact-footer {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .contact-footer p {
+        margin: 10px;
+    }
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 950px) {
+    .container-form {
+        margin: 100px;
+    }
+
+    .container-form_box {
+        padding: 50px;
+    }
+
+    .contact-footer {
+        margin-top: 20px;
+    }
+
+    .contact-footer p {
+        margin: 10px;
+        font-size: 15px;
+    }
+}
+
+/* for desktop responsiveness */
+@media (max-width: 950px) and (min-width: 580px) {
+    .container-form {
+        margin: 100px;
+    }
+
+    .container-form_box {
+        padding: 50px;
+    }
+
+    .contact-footer {
+        margin-top: 20px;
+    }
+
+    .contact-footer p {
+        margin: 10px;
+        font-size: 15px;
+    }
+}
+
 /* footer */
 .container-footer {
     margin: auto 100px;

@@ -247,6 +247,78 @@ div.background-body-2 {
     border-bottom: solid 4px #4d55d9;
 }
 
+@media (max-width: 580px) {
+    .container {
+        margin: 0;
+    }
+
+    .container_box {
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    .container_box h1 {
+        font-size: 2em;
+    }
+
+    .container_box .about-me {
+        padding: 20px;
+    }
+
+    .container_box .about-me p {
+        font-size: 1em;
+    }
+
+}
+
+/* for tablet responsiveness */
+@media (max-width : 1280px) and (min-width : 950px) {
+    .container {
+        margin: 0;
+    }
+
+    .container_box {
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    .container_box h1 {
+        font-size: 2.5em;
+    }
+
+    .container_box .about-me {
+        padding: 40px;
+    }
+
+    .container_box .about-me p {
+        font-size: 1.1em;
+    }
+}
+
+/* for desktop responsiveness */
+@media (max-width: 950px) and (min-width: 580px) {
+    .container {
+        margin: 0;
+    }
+
+    .container_box {
+        margin: 50px 0;
+        padding: 0;
+    }
+
+    .container_box h1 {
+        font-size: 2.5em;
+    }
+
+    .container_box .about-me {
+        padding: 40px;
+    }
+
+    .container_box .about-me p {
+        font-size: 1.1em;
+    }
+}
+
 
 /* footer */
 .container-footer {
