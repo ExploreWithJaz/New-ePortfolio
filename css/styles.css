@@ -264,7 +264,7 @@ div.container button {
     background-color: #ff6c17;
     border: none;
     padding: 20px 30px;
-    margin: 20px 0;
+    margin: 20px 10px;
     border-radius: 50px;
     text-decoration: none;
     color: white;
@@ -454,11 +454,17 @@ div.container_aboutme .progress {
         margin: 10px 0;
     }
 
+    div.container_mobile_download-button {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
     div.container_mobile button {
         background-color: #ff6c17;
         border: none;
         padding: 15px 20px;
-        margin: 20px 0;
+        margin: 20px 10px;
         border-radius: 40px;
         text-decoration: none;
         color: white;
