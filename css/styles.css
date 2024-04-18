@@ -250,6 +250,51 @@ div.background-body-2 {
     opacity: 1; /* Fade in */
 }
 
+/* Mobile Web Banner */
+.mobile-popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    /* animation */
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.3s ease-in-out /* Transition for opacity */
+  }
+  
+  .mobile-popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 75%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -45px;
+    right: -30px;
+    cursor: pointer;
+    font-size: 3em;
+    color: white;
+  }
+
+  /* Show the popup */
+.mobile-popup-container.show {
+    display: block;
+    opacity: 1; /* Fade in */
+}
+
+.mobile-popup-container img {
+    width: 100%;
+}
+
 
 /* content */
 div.container {
@@ -450,6 +495,10 @@ div.container_aboutme .progress {
 
 /* for mobile reponsiveness */
 @media (max-width: 580px) {
+    .popup-desktop {
+        display: none;
+    }
+
     div.container {
         display: none;
     }
@@ -613,6 +662,10 @@ div.container_aboutme .progress {
 }
 
 @media (min-width: 580px) {
+    .popup-mobile {
+        display: none;
+    }
+
     div.container_mobile {
         display: none;
     }
@@ -624,6 +677,18 @@ div.container_aboutme .progress {
 
 /* for tablet responsiveness */
 @media (max-width : 1280px) and (min-width : 580px) {
+    .popup-mobile {
+        display: none;
+    }
+    
+    .popup-content {
+        width: 90%;
+    }
+
+    .popup-content img {
+        width: 100%;
+    }
+
     div.background-body-2 {
         top: 90vh;
     }
@@ -715,6 +780,14 @@ div.container_aboutme .progress {
 
 /* for desktop responsiveness */
 @media screen and (max-width: 950px) and (min-width: 580px) {
+    .popup-content {
+        width: 90%;
+    }
+
+    .popup-content img {
+        width: 100%;
+    }
+
     .row {
         flex-direction: column;
         padding-bottom: 30px;
@@ -725,8 +798,6 @@ div.container_aboutme .progress {
         margin-top: 20px;
         align-items: center;
     }
-
-    
 }
 
 div.testimonial-container {
