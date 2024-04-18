@@ -210,6 +210,46 @@ div.background-body-2 {
     top: 110vh;
 }
 
+/* Web Banner */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    /* animation */
+    opacity: 0; /* Initial opacity set to 0 */
+    transition: opacity 0.3s ease-in-out; /* Transition for opacity */
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: -45px;
+    right: -30px;
+    cursor: pointer;
+    font-size: 3em;
+    color: white;
+  }
+
+  /* Show the popup */
+.popup-container.show {
+    display: block;
+    opacity: 1; /* Fade in */
+}
+
 
 /* content */
 div.container {
@@ -233,7 +273,7 @@ div.container .column {
 
 div.container .column p {
     font-size: 1.7em;
-    text-align: left;
+    text-align: justify;
     margin: 20px 0;
     width: 70%;
     line-height: 37px;
