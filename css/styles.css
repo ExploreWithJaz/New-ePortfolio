@@ -210,6 +210,12 @@ div.background-body-2 {
     top: 110vh;
 }
 
+div.mobile-background-body {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+}
+
 /* Web Banner */
 .popup-container {
     display: none;
@@ -219,6 +225,7 @@ div.background-body-2 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
     z-index: 999;
     /* animation */
     opacity: 0; /* Initial opacity set to 0 */
@@ -233,6 +240,11 @@ div.background-body-2 {
     background-color: #fff;
     padding: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+
+  .popup-content img {
+    border-radius: 10px;
   }
   
   .close-btn {
@@ -259,6 +271,7 @@ div.background-body-2 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
     z-index: 999;
     /* animation */
     opacity: 0; /* Initial opacity set to 0 */
@@ -274,7 +287,13 @@ div.background-body-2 {
     padding: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     width: 75%;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
   }
+
+  .mobile-popup-content {
+    border-radius: 10px;   
+ }
   
   .close-btn {
     position: absolute;
@@ -499,6 +518,10 @@ div.container_aboutme .progress {
         display: none;
     }
 
+    .background-body, .background-body-2 {
+        display: none;
+    }
+
     div.container {
         display: none;
     }
@@ -522,7 +545,7 @@ div.container_aboutme .progress {
     }
 
     div.container_mobile img {
-        height: 200px;
+        height: 300px;
         width: auto;
         margin: 30px;
     }
@@ -666,6 +689,10 @@ div.container_aboutme .progress {
         display: none;
     }
 
+    .mobile-background-body {
+        display: none;
+    }
+
     div.container_mobile {
         display: none;
     }
@@ -678,6 +705,10 @@ div.container_aboutme .progress {
 /* for tablet responsiveness */
 @media (max-width : 1280px) and (min-width : 580px) {
     .popup-mobile {
+        display: none;
+    }
+
+    .mobile-background-body {
         display: none;
     }
     
@@ -780,6 +811,10 @@ div.container_aboutme .progress {
 
 /* for desktop responsiveness */
 @media screen and (max-width: 950px) and (min-width: 580px) {
+    .mobile-background-body {
+        display: none;
+    }
+
     .popup-content {
         width: 90%;
     }
