@@ -236,7 +236,7 @@ div.container-project-box .card:hover {
 
 div.container-project-box .card img{
     width: 100%;
-    height: 187px;
+    height: auto;
     margin: 10px 0;
 }
 

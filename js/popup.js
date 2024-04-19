@@ -58,8 +58,6 @@ closeBtnAdopt.addEventListener('click', function() {
   }, 300); // Same duration as CSS transition
 });
 
-
-
 const openBtnMinion = document.getElementById('open-btn-minion');
 const overlayMinion = document.getElementById('overlay-minion');
 const closeBtnMinion = document.getElementById('close-btn-minion');
@@ -77,5 +75,25 @@ closeBtnMinion.addEventListener('click', function() {
   document.getElementById('popup-minion').style.opacity = '0'; 
   setTimeout(() => {
     overlayMinion.style.display = 'none'; 
+  }, 300); // Same duration as CSS transition
+});
+
+const openBtnKairos = document.getElementById('open-btn-kairos');
+const overlayKairos = document.getElementById('overlay-kairos');
+const closeBtnKairos = document.getElementById('close-btn-kairos');
+
+openBtnKairos.addEventListener('click', function() {
+  overlayKairos.style.display = 'block'; 
+  setTimeout(() => {
+    overlayKairos.style.opacity = '1'; 
+    document.getElementById('popup-kairos').style.opacity = '1'; 
+  }, 50); // Delay added for smoother transition
+});
+
+closeBtnKairos.addEventListener('click', function() {
+  overlayKairos.style.opacity = '0';
+  document.getElementById('popup-kairos').style.opacity = '0'; 
+  setTimeout(() => {
+    overlayKairos.style.display = 'none'; 
   }, 300); // Same duration as CSS transition
 });
