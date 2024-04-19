@@ -201,6 +201,16 @@ div.background-body-2 {
     top: 50px;
 }
 
+div.mobile-background-body-2 {
+    position: fixed;
+    z-index: -999;
+    top: 0;
+}
+
+div.mobile-background-body-2 {
+    opacity: 0.5;
+}
+
 /* main */
 .container-form {
     display: flex;
@@ -281,6 +291,10 @@ button-container {
 }
 
 @media (max-width: 580px) {
+    .background-body-2 {
+        display: none;
+    }
+
     .container-form {
         margin: 30px;
     }
@@ -313,6 +327,12 @@ button-container {
 
     .contact-footer p {
         margin: 10px;
+    }
+}
+
+@media (min-width: 580px) {
+    .mobile-background-body-2 {
+        display: none;
     }
 }
 
