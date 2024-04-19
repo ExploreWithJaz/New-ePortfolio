@@ -97,3 +97,23 @@ closeBtnKairos.addEventListener('click', function() {
     overlayKairos.style.display = 'none'; 
   }, 300); // Same duration as CSS transition
 });
+
+const openBtnLemon = document.getElementById('open-btn-lemon');
+const overlayLemon = document.getElementById('overlay-lemon');
+const closeBtnLemon = document.getElementById('close-btn-lemon');
+
+openBtnLemon.addEventListener('click', function() {
+  overlayLemon.style.display = 'block'; 
+  setTimeout(() => {
+    overlayLemon.style.opacity = '1'; 
+    document.getElementById('popup-lemon').style.opacity = '1'; 
+  }, 50); // Delay added for smoother transition
+});
+
+closeBtnLemon.addEventListener('click', function() {
+  overlayLemon.style.opacity = '0';
+  document.getElementById('popup-lemon').style.opacity = '0'; 
+  setTimeout(() => {
+    overlayLemon.style.display = 'none'; 
+  }, 300); // Same duration as CSS transition
+});
