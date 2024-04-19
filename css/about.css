@@ -230,6 +230,7 @@ div.mobile-background-body-2 {
     color: white;
     font-size: 3.5em;
     font-weight: 700;
+    margin: 50px 0;
 }
 
 .container_box .about-me {
@@ -272,7 +273,8 @@ div.mobile-background-body-2 {
     }
 
     .container_box h1 {
-        font-size: 2em;
+        font-size: 2.5em;
+        margin: 25px 0;
     }
 
     .container_box .about-me {
